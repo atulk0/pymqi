@@ -42,9 +42,9 @@ def get_windows_settings():
         include_dirs = [r'c:\Program Files\IBM\MQ\tools\Lib64',
                         r'{}\tools\Lib64'.format(os.environ['MQ_FILE_PATH'])]
     else:
-        library_dirs = [r'c:\Program Files\IBM\WebSphere MQ\Tools\Lib',
+        library_dirs = [r'c:\Program Files (x86)\IBM\WebSphere MQ\Tools\Lib',
                         r'{}\tools\Lib'.format(os.environ['MQ_FILE_PATH'])]
-        include_dirs = [r'c:\Program Files\IBM\WebSphere MQ\tools\c\include',
+        include_dirs = [r'c:\Program Files (x86)\IBM\WebSphere MQ\tools\c\include',
                         r'{}\tools\c\include'.format(os.environ['MQ_FILE_PATH'])]
 
     if bindings_mode:
